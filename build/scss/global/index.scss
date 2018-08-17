@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    //import style sheets for other portions of website
+    @import "../sidebar/sidebar";
+    @import "../about/about";
+    @import "../skills/skills";
+    @import "../portfolio/portfolio";
+    @import "../resume/resume";
+}
+
