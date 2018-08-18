@@ -11,7 +11,7 @@
 .side-bar-hr {
     width: 130px;
     height: 5px; 
-    background-color: $red;
+    background-color: $highlight;
     border: none;
 }
 
@@ -43,7 +43,7 @@
     }
 
     &:hover {
-        background-color: $red;
+        background-color: $highlight;
     }
 
     &:hover > .icon {

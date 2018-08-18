@@ -38,7 +38,7 @@ body {
       body .body-wrapper .side-bar .side-bar-hr {
         width: 130px;
         height: 5px;
-        background-color: #FF5D73;
+        background-color: #21ce99;
         border: none; }
       body .body-wrapper .side-bar .intro {
         text-align: right;
@@ -63,7 +63,7 @@ body {
         body .body-wrapper .side-bar .social-link:nth-child(even) {
           background-color: #2d3436; }
         body .body-wrapper .side-bar .social-link:hover {
-          background-color: #FF5D73; }
+          background-color: #21ce99; }
         body .body-wrapper .side-bar .social-link:hover > .icon {
           color: #2d3436; }
         body .body-wrapper .side-bar .social-link .icon {
@@ -89,6 +89,58 @@ body {
       height: 100%;
       overflow-y: scroll;
       background-color: #fff; }
+      body .body-wrapper .main-body .about {
+        background-color: #fff;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 100px; }
+        body .body-wrapper .main-body .about .section-title {
+          background-color: #21ce99;
+          font-size: 70px;
+          font-weight: bold;
+          margin-bottom: 30px;
+          color: #fff;
+          padding: 10px 40px; }
+        @media (max-width: 425px) {
+          body .body-wrapper .main-body .about .section-title {
+            font-size: 55px; } }
+        body .body-wrapper .main-body .about .description-container {
+          text-align: left; }
+          body .body-wrapper .main-body .about .description-container .bracket {
+            color: #2d3436; }
+          body .body-wrapper .main-body .about .description-container .attribute {
+            color: #21ce99; }
+          body .body-wrapper .main-body .about .description-container .value {
+            margin-left: 15px;
+            font-weight: 400;
+            color: #2d3436; }
+          body .body-wrapper .main-body .about .description-container h2 {
+            margin-left: 25px; }
+          @media (max-width: 425px) {
+            body .body-wrapper .main-body .about .description-container h2 {
+              font-size: 18px; }
+            body .body-wrapper .main-body .about .description-container .bracket {
+              font-size: 18px; } }
+      @media (max-width: 425px) {
+        body .body-wrapper .main-body .about {
+          padding: 100px 20px; } }
+      body .body-wrapper .main-body .skills {
+        background-color: #dfe6e9;
+        height: 100vh;
+        width: 100%; }
+      body .body-wrapper .main-body .portfolio {
+        background-color: #fff;
+        height: 100vh;
+        width: 100%; }
+      body .body-wrapper .main-body .resume {
+        background-color: #dfe6e9;
+        height: 100vh;
+        width: 100%; }
     @media (max-width: 1024px) {
       body .body-wrapper .main-body {
         width: 100vw;
@@ -96,19 +148,3 @@ body {
   @media (max-width: 768px) {
     body .body-wrapper {
       display: block; } }
-  body .about {
-    background-color: #fff;
-    height: 100vh;
-    width: 100%; }
-  body .skills {
-    background-color: #ccc;
-    height: 100vh;
-    width: 100%; }
-  body .portfolio {
-    background-color: #fff;
-    height: 100vh;
-    width: 100%; }
-  body .resume {
-    background-color: #ccc;
-    height: 100vh;
-    width: 100%; }

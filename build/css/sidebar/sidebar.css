@@ -8,7 +8,7 @@
 .side-bar-hr {
   width: 130px;
   height: 5px;
-  background-color: #FF5D73;
+  background-color: #21ce99;
   border: none; }
 
 .intro {
@@ -35,7 +35,7 @@
   .social-link:nth-child(even) {
     background-color: #2d3436; }
   .social-link:hover {
-    background-color: #FF5D73; }
+    background-color: #21ce99; }
   .social-link:hover > .icon {
     color: #2d3436; }
   .social-link .icon {
