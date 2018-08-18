@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 body {
     background-color: white;
     color: black;
+    font-family: 'Source Sans Pro', sans-serif;
 
     .body-wrapper {
         display: inline-block;
@@ -18,17 +21,39 @@ body {
             width: 50vw;
             min-height: 100vh;
             height: 100%;
-            background-color: red;
+            background: linear-gradient(to right, rgba(73, 73, 73, 0.8), rgba(73, 73, 73, 0.8)),url('../../img/me.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             position: fixed;
             top: 0;
             left: 0;
-
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 100px;
             @import "../sidebar/sidebar";
-        }
+        } //end side bar
         @media (max-width: 1024px) {
             .side-bar {
                 width: 100vw;
                 position: relative;
+            }
+        } 
+        @media (min-width: 425px) and (max-width: 768px) and (orientation: landscape) {
+            .side-bar {
+                padding: 20px;
+            }
+        }
+        @media (max-width: 425px) {
+            .side-bar {
+                padding: 50px;
+            }
+        } 
+        @media (max-width: 325px) {
+            .side-bar {
+                padding: 20px;
             }
         }
 
@@ -38,15 +63,15 @@ body {
             min-height: 400vh;
             height: 100%;
             overflow-y: scroll;
-            background-color: yellow;
+            background-color: white;
         }
         @media (max-width: 1024px) {
             .main-body {
                 width: 100vw;
                 margin-left: 0;
             }
-        }
-    }
+        } //end main body
+    } //end body wrapper 
     @media (max-width: 768px) {
         .body-wrapper {
             display: block;
