@@ -31,20 +31,10 @@ gulp.task('babel', () => {
     .pipe(gulp.dest('dist/js')) 
 })
 
-//MINIFY AND CONCATENATE CSS & JS FILES
-gulp.task('useref', () => {
-    return gulp.src('build/*.html')
-    .pipe(useref())
-    // Minify only JS after babelizing
-    //.pipe(gulpIf('*.js', uglify()))
-    // Minify only CSS after compiling
-    //.pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
-});
 
 gulp.task('watch', () => {
     // watch sass files for any changes then run sass task
-    gulp.watch('build/scss/**/*.scss', gulp.series('sass', 'useref'));
+    gulp.watch('build/scss/**/*.scss', gulp.series('sass'));
     //watch only script file for changes not entire directory then run babel and useref task
-    gulp.watch('build/js/script.js', gulp.series('babel', 'useref')); 
+    gulp.watch('build/js/script.js', gulp.series('babel')); 
 });

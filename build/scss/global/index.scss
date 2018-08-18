@@ -7,10 +7,53 @@
 body {
     background-color: white;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    .body-wrapper {
+        display: inline-block;
+        min-height: 100vh;
+        height: 100%; 
+        width: 100vw;
+
+        .side-bar {
+            width: 50vw;
+            min-height: 100vh;
+            height: 100%;
+            background-color: red;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            @import "../sidebar/sidebar";
+        }
+        @media (max-width: 1024px) {
+            .side-bar {
+                width: 100vw;
+                position: relative;
+            }
+        }
+
+        .main-body {
+            width: 50vw;
+            margin-left: 50vw;
+            min-height: 400vh;
+            height: 100%;
+            overflow-y: scroll;
+            background-color: yellow;
+        }
+        @media (max-width: 1024px) {
+            .main-body {
+                width: 100vw;
+                margin-left: 0;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .body-wrapper {
+            display: block;
+        }
+    }
 
     //import style sheets for other portions of website
-    @import "../sidebar/sidebar";
     @import "../about/about";
     @import "../skills/skills";
     @import "../portfolio/portfolio";
