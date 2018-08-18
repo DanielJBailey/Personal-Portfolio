@@ -14,7 +14,7 @@
 .intro {
   text-align: right;
   margin: 20px 0 20px;
-  color: white;
+  color: #fff;
   font-weight: 300;
   font-size: 21px;
   line-height: 30px;
@@ -27,17 +27,17 @@
   flex-direction: column;
   width: 40px;
   height: 40px;
-  background-color: #2d3436;
+  background-color: #000;
   margin: 0px 5px;
   border-radius: 3px;
   transition: 0.5s;
   cursor: pointer; }
   .social-link:nth-child(even) {
-    background-color: #636e72; }
+    background-color: #2d3436; }
   .social-link:hover {
     background-color: #FF5D73; }
   .social-link:hover > .icon {
     color: #2d3436; }
   .social-link .icon {
-    color: white;
+    color: #fff;
     font-size: 22px; }

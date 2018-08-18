@@ -1,7 +1,9 @@
+@import '../variables';
+
 .name {
     font-size: 48px;
     line-height: 1.2;
-    color: #fff;
+    color: $white;
     font-weight: 400;
     margin: 0 0 20px;
 }
@@ -9,14 +11,14 @@
 .side-bar-hr {
     width: 130px;
     height: 5px; 
-    background-color: #FF5D73;
+    background-color: $red;
     border: none;
 }
 
 .intro {
     text-align: right;
     margin: 20px 0 20px;
-    color: white;
+    color: $white;
     font-weight: 300;
     font-size: 21px;
     line-height: 30px;
@@ -30,25 +32,25 @@
     flex-direction: column;
     width: 40px;
     height: 40px;
-    background-color: #2d3436;
+    background-color: $black;
     margin: 0px 5px;
     border-radius: 3px;
     transition: 0.5s;
     cursor: pointer;
 
     &:nth-child(even) {
-        background-color: #636e72;
+        background-color: $dark;
     }
 
     &:hover {
-        background-color: #FF5D73;
+        background-color: $red;
     }
 
     &:hover > .icon {
-        color: #2d3436;
+        color: $dark;
     }
     .icon {
-        color: white;
+        color: $white;
         font-size: 22px;
     }
 }
