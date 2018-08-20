@@ -20,8 +20,10 @@
       font-weight: 400;
       margin-bottom: 0px;
       line-height: 1.0;
-      color: #21ce99;
-      align-self: flex-end; }
+      color: #fff;
+      align-self: flex-end;
+      padding: 10px;
+      background-color: #21ce99; }
     .about .wrapper hr {
       width: 200px;
       height: 3px;

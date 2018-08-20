@@ -24,8 +24,10 @@
             font-weight: 400;
             margin-bottom: 0px;
             line-height: 1.0;
-            color: $highlight;
+            color: $white;
             align-self: flex-end;
+            padding: 10px;
+            background-color: $highlight;
         }
     
         hr {

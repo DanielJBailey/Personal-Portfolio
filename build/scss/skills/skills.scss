@@ -25,23 +25,33 @@
             font-weight: 400;
             margin-bottom: 0px;
             line-height: 1.0;
-            color: $bodyFont;
+            color: $white;
+            background-color: $highlight;
+            padding: 10px;
             align-self: flex-end;
         }
     
         hr {
             width: 200px;
-            height: 3px; 
-            background-color: $highlight;
+            height: 3px;
             border: none;
-            margin: 10px 0 50px;
+            margin: 10px 0 30px;
             align-self: flex-end;
+            background-color: $white;
         }
 
         .skills-title {
-            font-size: 21px;
+            font-size: 25px;
             color: $bodyFont;
-            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .skills-hr {
+            align-self: flex-start;
+            margin: 10px 0 20px;
+            background-color: #ccc;
+            height: 1px;
+            width: 100%;
         }
 
         ul {
@@ -51,11 +61,16 @@
                 font-size: 60px;
                 margin: 10px;
 
-                
+                .tech-icon {
+                    width: 60px;
+                    transition: 0.5s linear;
+                } 
+                .filtered {
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%); 
+                }
             }
-            .tech-icon {
-                width: 60px;
-            }
+            
         }
     }
 }
