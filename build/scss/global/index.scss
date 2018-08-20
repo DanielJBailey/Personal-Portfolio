@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
 
 @import '../variables';
 
@@ -6,12 +6,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 100%;
 }
 
 body {
     background-color: $white;
     color: $dark;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 
     .body-wrapper {
         display: inline-block;
@@ -50,7 +51,7 @@ body {
         }
         @media (max-width: 425px) {
             .side-bar {
-                padding: 50px;
+                padding: 25px;
             }
         } 
         @media (max-width: 325px) {
@@ -84,9 +85,5 @@ body {
             display: block;
         }
     }
-
-    //import style sheets for other portions of website
-    
-   
-}
+} //end body
 

@@ -1,7 +1,8 @@
 @import '../variables';
 
 .name {
-    font-size: 48px;
+    font-size: 35px;
+    letter-spacing: 1px;
     line-height: 1.2;
     color: $white;
     font-weight: 400;
@@ -10,7 +11,7 @@
 
 .side-bar-hr {
     width: 130px;
-    height: 5px; 
+    height: 3px; 
     background-color: $highlight;
     border: none;
 }
@@ -20,9 +21,9 @@
     margin: 20px 0 20px;
     color: $white;
     font-weight: 300;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 30px;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .social-link {
@@ -30,17 +31,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40px;
-    height: 40px;
-    background-color: $black;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid $white;
     margin: 0px 5px;
-    border-radius: 3px;
     transition: 0.5s;
     cursor: pointer;
-
-    &:nth-child(even) {
-        background-color: $dark;
-    }
 
     &:hover {
         background-color: $highlight;
@@ -51,7 +48,20 @@
     }
     .icon {
         color: $white;
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 325px) {
+        .icon {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .social-link {
+        width: 40px;
+        height: 40px;
     }
 }
 
