@@ -14,3 +14,16 @@ skillsSection.addEventListener('mouseleave', function() {
         icon.classList.add('filtered');
     });
 });
+
+//select all projects and add event listener
+let projects = document.querySelectorAll('.project');
+projects.forEach((project) => {
+    //remove filtered class on hover
+    project.addEventListener('mouseenter', function() {
+        this.classList.remove('filtered');
+    });
+    //add filtered class on mouse leave
+    project.addEventListener('mouseleave', function() {
+        this.classList.add('filtered');
+    });
+});
