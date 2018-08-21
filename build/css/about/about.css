@@ -33,6 +33,8 @@
       align-self: flex-end; }
     .about .wrapper .bracket {
       color: #2d3436; }
+    .about .wrapper a {
+      color: #21ce99; }
     .about .wrapper .attribute {
       color: #21ce99;
       font-size: 18px; }

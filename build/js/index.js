@@ -20,10 +20,12 @@ let projects = document.querySelectorAll('.project');
 projects.forEach((project) => {
     //remove filtered class on hover
     project.addEventListener('mouseenter', function() {
-        this.find('.overlay').classList.remove('hidden');
+        let children = this.children;
+        children[0].classList.remove('hidden');
     });
     //add filtered class on mouse leave
     project.addEventListener('mouseleave', function() {
-        this.classList.add('hidden');
+        let children = this.children;
+        children[0].classList.add('hidden');
     });
 });

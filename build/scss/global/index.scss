@@ -9,6 +9,13 @@
     font-size: 100%;
 }
 
+::selection {
+    background: rgba(33, 206, 153, 0.2); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: rgba(33, 206, 153, 0.2); /* Gecko Browsers */
+}
+
 body {
     background-color: $white;
     color: $dark;

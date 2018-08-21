@@ -24,13 +24,13 @@
       color: #fff;
       background-color: #21ce99;
       padding: 10px;
-      align-self: flex-end; }
+      align-self: center; }
     .portfolio .wrapper hr {
       width: 200px;
       height: 3px;
       border: none;
       margin: 10px 0 50px;
-      align-self: flex-end;
+      align-self: center;
       background-color: #ecf0f1; }
   .portfolio .portfolio-list {
     list-style-type: none;
@@ -44,7 +44,9 @@
       height: auto;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
       position: relative;
-      border-radius: 10px; }
+      border-radius: 10px;
+      transition: 0.5s;
+      cursor: pointer; }
       .portfolio .portfolio-list .project img {
         margin: 0;
         vertical-align: top;
@@ -83,33 +85,20 @@
           color: #ecf0f1;
           font-size: 16px;
           text-align: center;
-          max-width: 75%; }
-        .portfolio .portfolio-list .project .overlay .tools-list {
-          list-style-type: none;
-          margin: 20px 0;
-          text-align: center; }
-          .portfolio .portfolio-list .project .overlay .tools-list .tech {
-            display: inline-block;
-            color: white;
-            font-size: 12px;
-            border: 1px solid #21ce99;
-            padding: 5px;
-            margin: 2px 1px;
-            border-radius: 5px; }
-        .portfolio .portfolio-list .project .overlay .button-container {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center; }
-          .portfolio .portfolio-list .project .overlay .button-container button {
-            padding: 5px 10px;
-            border: none;
-            background-color: white;
-            color: #2d3436; }
-            .portfolio .portfolio-list .project .overlay .button-container button:not(:first-child) {
-              margin-left: 10px; }
+          max-width: 75%;
+          line-height: 1.4; }
+      @media (max-width: 425px) {
+        .portfolio .portfolio-list .project .overlay .project-title {
+          font-size: 25px; }
+        .portfolio .portfolio-list .project .overlay .project-description {
+          font-size: 14px;
+          max-width: 100%; }
+        .portfolio .portfolio-list .project .overlay hr {
+          margin: 5px; }
+        .portfolio .portfolio-list .project .overlay .link-icon {
+          margin: 10px; } }
       .portfolio .portfolio-list .project .hidden {
-        display: none; }
-  @media (max-width: 425px) {
+        opacity: 0; }
+  @media (max-width: 650px) {
     .portfolio .portfolio-list {
       grid-template-columns: 1fr; } }
