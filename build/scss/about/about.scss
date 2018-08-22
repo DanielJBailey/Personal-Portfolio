@@ -19,6 +19,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        text-align: left;
 
         .section-title {
             font-size: 35px;
@@ -73,6 +74,10 @@
             }
         }
     }
+}
 
-    
+@media (max-width: 425px) {
+    .about {
+        padding: 100px 15px;
+    }
 }

@@ -42,7 +42,7 @@
       margin: 10px 0 20px;
       height: 2px;
       width: 100%;
-      background-color: #f1f2f6; }
+      background-color: #fff; }
     .skills .wrapper ul {
       list-style-type: none; }
       .skills .wrapper ul li {
@@ -55,3 +55,7 @@
         .skills .wrapper ul li .filtered {
           -webkit-filter: grayscale(100%);
           filter: grayscale(100%); }
+
+@media (max-width: 425px) {
+  .skills {
+    padding: 100px 15px; } }
