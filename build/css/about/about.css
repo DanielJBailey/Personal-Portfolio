@@ -38,11 +38,13 @@
       color: #21ce99; }
     .about .wrapper .attribute {
       color: #21ce99;
-      font-size: 18px; }
+      font-size: 18px;
+      font-weight: 400; }
     .about .wrapper .value {
       margin-left: 15px;
       color: #555555;
-      font-size: 16px; }
+      font-size: 16px;
+      font-weight: 400; }
     .about .wrapper h2 {
       margin-left: 25px; }
     @media (max-width: 425px) {

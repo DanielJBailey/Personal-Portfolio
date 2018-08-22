@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 100%; }
+  font-size: 100%;
+  font-weight: 400; }
 
 ::selection {
   background: rgba(33, 206, 153, 0.2);
@@ -144,11 +145,13 @@ body {
             color: #21ce99; }
           body .body-wrapper .main-body .about .wrapper .attribute {
             color: #21ce99;
-            font-size: 18px; }
+            font-size: 18px;
+            font-weight: 400; }
           body .body-wrapper .main-body .about .wrapper .value {
             margin-left: 15px;
             color: #555555;
-            font-size: 16px; }
+            font-size: 16px;
+            font-weight: 400; }
           body .body-wrapper .main-body .about .wrapper h2 {
             margin-left: 25px; }
           @media (max-width: 425px) {
@@ -241,7 +244,7 @@ body {
             padding: 10px;
             align-self: flex-end; }
           body .body-wrapper .main-body .portfolio .wrapper hr {
-            width: 100%;
+            width: 200px;
             height: 3px;
             border: none;
             margin: 10px 0 50px;
@@ -315,7 +318,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 100px 20px; }
+        padding: 100px 1em; }
         body .body-wrapper .main-body .resume .wrapper {
           max-width: 450px;
           width: 100%;
@@ -332,14 +335,56 @@ body {
             color: #fff;
             background-color: #21ce99;
             padding: 10px;
-            align-self: flex-start; }
+            align-self: flex-end; }
+          body .body-wrapper .main-body .resume .wrapper .education-title {
+            font-size: 35px;
+            font-weight: 400;
+            margin: 30px 0 0;
+            line-height: 1.0;
+            color: #fff;
+            background-color: #21ce99;
+            padding: 10px;
+            align-self: flex-end; }
           body .body-wrapper .main-body .resume .wrapper hr {
             width: 100%;
             height: 3px;
             border: none;
-            margin: 10px 0 50px;
-            align-self: flex-start;
+            margin: 10px 0 30px;
+            align-self: flex-end;
             background-color: #fff; }
+          body .body-wrapper .main-body .resume .wrapper .experience-list {
+            list-style-type: none;
+            width: 100%; }
+            body .body-wrapper .main-body .resume .wrapper .experience-list .job {
+              background-color: white;
+              height: 110px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+              body .body-wrapper .main-body .resume .wrapper .experience-list .job .job-logo {
+                max-width: 105px;
+                padding: 15px; }
+              body .body-wrapper .main-body .resume .wrapper .experience-list .job .description .company {
+                font-size: 20px;
+                font-weight: 700;
+                color: #555555; }
+              body .body-wrapper .main-body .resume .wrapper .experience-list .job .description .title {
+                font-size: 16px;
+                font-weight: 400;
+                color: #555555; }
+              body .body-wrapper .main-body .resume .wrapper .experience-list .job .description .date {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.3);
+                font-style: italic; }
+            body .body-wrapper .main-body .resume .wrapper .experience-list .divider {
+              margin: 0 auto;
+              content: "";
+              height: 25px;
+              width: 3px;
+              background-color: rgba(0, 0, 0, 0.1);
+              display: block; }
     @media (max-width: 1024px) {
       body .body-wrapper .main-body {
         width: 100vw;
