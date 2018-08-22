@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 20px;
+    padding: 100px 2em;
 
     .wrapper {
         max-width: 450px;
@@ -28,15 +28,15 @@
             color: $white;
             background-color: $highlight;
             padding: 10px;
-            align-self: center;
+            align-self: flex-end;
         }
     
         hr {
-            width: 200px;
+            width: 100%;
             height: 3px;
             border: none;
             margin: 10px 0 50px;
-            align-self: center;
+            align-self: flex-end;
             background-color: $light;
         }
     }
@@ -46,7 +46,7 @@
         width: 100%;
         display: grid;
         column-gap: 10px;
-        grid-gap: 10px;
+        grid-gap: 20px;
         grid-template-columns: 1fr 1fr;
         
         .project{
@@ -89,7 +89,7 @@
                 }
     
                 .project-title {
-                    font-size: 30px;
+                    font-size: 20px;
                     color: $light;
                 }
     
@@ -103,27 +103,11 @@
     
                 .project-description {
                     color: $light;
-                    font-size: 16px;
+                    font-size: 14px;
                     text-align: center;
-                    max-width: 75%;
                     line-height: 1.4;
                 }  
             } //end overlay
-            @media (max-width: 425px) {
-                .overlay .project-title {
-                    font-size: 25px;
-                }
-                .overlay .project-description {
-                    font-size: 14px;
-                    max-width: 100%;
-                }
-                .overlay hr {
-                    margin: 5px;
-                }
-                .overlay .link-icon {
-                    margin: 10px;
-                }
-            }
             .hidden {
                 opacity: 0;
             }
