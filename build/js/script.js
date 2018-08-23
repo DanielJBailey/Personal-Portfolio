@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
         var skillsHeight = skillsSection.offsetHeight;
         if (scrollPosition < skillsOffset) {
             fadeOut();
-        } else if (scrollPosition > skillsOffset - skillsHeight && scrollPosition <= skillsOffset + skillsHeight / 1.2) {
+        } else if (scrollPosition > skillsOffset && scrollPosition <= skillsOffset + skillsHeight) {
             fadeIn();
         } else {
             fadeOut();
@@ -22,7 +22,7 @@ window.addEventListener('scroll', function () {
         var _skillsHeight = _skillsSection.offsetHeight;
         if (scrollPosition < _skillsOffset) {
             fadeOut();
-        } else if (scrollPosition > _skillsOffset - _skillsHeight && scrollPosition <= _skillsOffset + _skillsHeight / 1.2) {
+        } else if (scrollPosition > _skillsOffset && scrollPosition <= _skillsOffset + _skillsHeight) {
             fadeIn();
         } else {
             fadeOut();
