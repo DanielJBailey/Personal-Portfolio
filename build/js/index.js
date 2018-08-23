@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 // get skill section container and store it in variable
 let skillsSection = document.querySelector('.skills');
 let skillsOffset = skillsSection.offsetTop;
