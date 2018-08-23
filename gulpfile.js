@@ -20,15 +20,15 @@ gulp.task('sass', () => {
 //BABEL TASK
 gulp.task('babel', () => {
     //Get script file
-    return gulp.src('build/js/script.js') 
+    return gulp.src('build/js/index.js') 
     //babelize the file
     .pipe(babel({
         presets: ['env']
     })) 
     //rename it to index.js
-    .pipe(rename("index.js")) 
+    .pipe(rename("script.js")) 
     //replace file in directory with new compiled file
-    .pipe(gulp.dest('dist/js')) 
+    .pipe(gulp.dest('build/js')) 
 })
 
 
@@ -36,5 +36,5 @@ gulp.task('watch', () => {
     // watch sass files for any changes then run sass task
     gulp.watch('build/scss/**/*.scss', gulp.series('sass'));
     //watch only script file for changes not entire directory then run babel and useref task
-    gulp.watch('build/js/script.js', gulp.series('babel')); 
+    gulp.watch('build/js/index.js', gulp.series('babel')); 
 });

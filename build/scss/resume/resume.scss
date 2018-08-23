@@ -10,6 +10,17 @@
     align-items: center;
     justify-content: center;
     padding: 100px 2em;
+    position: relative;
+
+    .back-to-top {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        font-size: 25px;
+        padding: 20px;
+        color: $dark;
+    }
 
     .wrapper {
         max-width: 450px;
@@ -120,6 +131,7 @@
             border: none;
             transition: 0.3s;
             cursor: pointer;
+            text-decoration: none;
             color: $white;
 
             &:hover {
