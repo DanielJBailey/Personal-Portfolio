@@ -1,18 +1,32 @@
 'use strict';
 
-// get skill section container and store it in variable
-var skillsSection = document.querySelector('.skills');
-var skillsOffset = skillsSection.offsetTop;
-var skillsHeight = skillsSection.offsetHeight;
-
 window.addEventListener('scroll', function () {
     var scrollPosition = window.pageYOffset;
-    if (scrollPosition < skillsOffset) {
-        fadeOut();
-    } else if (scrollPosition > skillsOffset - skillsHeight && scrollPosition <= skillsOffset + skillsHeight / 1.2) {
-        fadeIn();
-    } else {
-        fadeOut();
+
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        var skillsSection = document.querySelector('.skills');
+        var skillsOffset = skillsSection.offsetTop;
+        var skillsHeight = skillsSection.offsetHeight;
+        if (scrollPosition < skillsOffset) {
+            fadeOut();
+        } else if (scrollPosition > skillsOffset - skillsHeight && scrollPosition <= skillsOffset + skillsHeight / 1.2) {
+            fadeIn();
+        } else {
+            fadeOut();
+        }
+    }
+
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        var _skillsSection = document.querySelector('.skills');
+        var _skillsOffset = _skillsSection.offsetTop;
+        var _skillsHeight = _skillsSection.offsetHeight;
+        if (scrollPosition < _skillsOffset) {
+            fadeOut();
+        } else if (scrollPosition > _skillsOffset - _skillsHeight && scrollPosition <= _skillsOffset + _skillsHeight / 1.2) {
+            fadeIn();
+        } else {
+            fadeOut();
+        }
     }
 });
 

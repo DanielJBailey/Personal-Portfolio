@@ -1,17 +1,32 @@
-// get skill section container and store it in variable
-let skillsSection = document.querySelector('.skills');
-let skillsOffset = skillsSection.offsetTop;
-let skillsHeight = skillsSection.offsetHeight;
-
 window.addEventListener('scroll', function() {
     let scrollPosition = window.pageYOffset;
-    if(scrollPosition < skillsOffset) {
-        fadeOut();
-    } else if ((scrollPosition > skillsOffset - skillsHeight) && (scrollPosition <= skillsOffset + skillsHeight/1.2)) {
-        fadeIn();
-    } else {
-        fadeOut();
-    }
+
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        let skillsSection = document.querySelector('.skills');
+        let skillsOffset = skillsSection.offsetTop;
+        let skillsHeight = skillsSection.offsetHeight;
+        if(scrollPosition < skillsOffset) {
+            fadeOut();
+        } else if ((scrollPosition > skillsOffset - skillsHeight) && (scrollPosition <= skillsOffset + skillsHeight/1.2)) {
+            fadeIn();
+        } else {
+            fadeOut();
+        }
+     }
+     
+     if (window.matchMedia("(orientation: landscape)").matches) {
+        let skillsSection = document.querySelector('.skills');
+        let skillsOffset = skillsSection.offsetTop;
+        let skillsHeight = skillsSection.offsetHeight;
+        if(scrollPosition < skillsOffset) {
+            fadeOut();
+        } else if ((scrollPosition > skillsOffset - skillsHeight) && (scrollPosition <= skillsOffset + skillsHeight/1.2)) {
+            fadeIn();
+        } else {
+            fadeOut();
+        }
+     }
+    
 });
 
 function fadeIn() {
