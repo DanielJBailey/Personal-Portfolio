@@ -14,6 +14,10 @@ Navigate to directory containing `package.json`
 
 `npm install`
 
+Then open a new command window and type
+`gulp watch`
+to auto compile JS files using Babel and compile Sass files as well
+
 ### Mobile View
 <img src ="https://i.gyazo.com/66cac07c829c18a41f91dd0e46252d64.png" width="300px"/>
 
