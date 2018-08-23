@@ -1,5 +1,7 @@
 # Person Portfolio Website
 
+[View LIVE](https://www.danieljbailey.com)
+
 ## Built using
  - HTML
  - CSS / SASS
@@ -17,3 +19,5 @@ Navigate to directory containing `package.json`
 
 ### Desktop View
 <img src = "https://i.gyazo.com/b3a3122650c74159d75a742a76063d5d.jpg" width="800px"/>
+
+# Happy Coding!
