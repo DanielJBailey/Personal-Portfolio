@@ -2,20 +2,33 @@
 
 // get skill section container and store it in variable
 var skillsSection = document.querySelector('.skills');
-// remove grayscale filter class when mouse enters
-skillsSection.addEventListener('mouseenter', function () {
+var skillsOffset = skillsSection.offsetTop;
+var skillsHeight = skillsSection.offsetHeight;
+
+window.addEventListener('scroll', function () {
+    var scrollPosition = window.pageYOffset;
+    if (scrollPosition < skillsOffset) {
+        fadeOut();
+    } else if (scrollPosition > skillsOffset && scrollPosition <= skillsOffset + skillsHeight / 1.2) {
+        fadeIn();
+    } else {
+        fadeOut();
+    }
+});
+
+function fadeIn() {
     var icons = document.querySelectorAll('.tech-icon');
     icons.forEach(function (icon) {
         icon.classList.remove('filtered');
     });
-});
-// add grayscale filter class when mouse leaves
-skillsSection.addEventListener('mouseleave', function () {
+}
+
+function fadeOut() {
     var icons = document.querySelectorAll('.tech-icon');
     icons.forEach(function (icon) {
         icon.classList.add('filtered');
     });
-});
+}
 
 //select all projects and add event listener
 var projects = document.querySelectorAll('.project');
