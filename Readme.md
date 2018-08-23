@@ -1,4 +1,4 @@
-# Person Portfolio Website
+# Personal Portfolio Website
 
 [View LIVE](https://www.danieljbailey.com)
 
