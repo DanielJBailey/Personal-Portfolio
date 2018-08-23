@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
     let scrollPosition = window.pageYOffset;
     if(scrollPosition < skillsOffset) {
         fadeOut();
-    } else if ((scrollPosition > skillsOffset) && (scrollPosition <= skillsOffset + skillsHeight/1.2)) {
+    } else if ((scrollPosition > skillsOffset - skillsHeight) && (scrollPosition <= skillsOffset + skillsHeight/1.2)) {
         fadeIn();
     } else {
         fadeOut();
